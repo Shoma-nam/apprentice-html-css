@@ -130,40 +130,55 @@ header h1 img {
 }
 header ul {
     display: inline-block;
+    padding: 20px 0;
     list-style: none;
 }
 header ul li {
     display: inline-block;
-    line-height: 1.5;
+    color: #6C757D;
+    text-align: left;
+    line-height: 1.3;
+    margin-top: 10px;
+    vertical-align: middle;
 }
-header ul li  h2{
-    display: inline-block;
-    line-height: 1.5;
+header ul li:first-child {
+    margin-right: 20px;
 }
-header ul li p {
+header ul li h2 {
     font-size:13px;
-    font-weight:normal;
+    font-weight: normal;
 }
+
+header ul li p {
+    font-size:32px;
+    font-weight: bold;
+}
+
 header ul li a {
     display: inline-block;
     height: 48px
-    padding: 0 15px;
+    padding: 0 15px ;
     border-radius: 5px;
-    font-size: 22px;
+    font-size: 20px;
     color: #fff;
     text-decoration: none
     line-height: 48px;
-    background: #6c757d;/
+    background: #6c757d;
 }
+
+header ul li a:hover {
+    background: #5a6268;
+}
+
 header ul a {
-    font-size: 22px;
+    font-size: 20px;
     color: #fff;
     text-decoration: none;
     background: #596267;
-    height: 48px;
+    height: 55px;
     display: inline-block;
-    line-height: 48px;
-    padding: 3px 15px;
+    line-height: 44px;
+    padding: 0px 13px;
     border-radius: 5px;
 }
 
@@ -188,21 +203,50 @@ nav ul li a {
     height: 55px;
     padding: 0px 35px;
     line-height: 55px;
-    color: #fff;
+    color: rgba(255,255,255,.5);
     text-decoration: none;
     line-height: 48px;
 }
 
+nav ul li a:hover {
+color: rgba(255,255,255,.75);
+}
+
 .key_visual {
     height: 600px;
-    /* background: #ff0;
-    background-image: url(img/top-image.jpg); */
+    background: #ff0;
+    background-image: url(image/top-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .key_visual_content {
+    display: inline-block;
+    margin-top: 60px;
     width: 560px;
     height: 300px;
+    padding: 30px 15px;
     background: #fff;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 5px;
+    background: #fff;
+    box-sizing: border-box;
+    text-align: left;
+}
+.key_visual_content h2 {
+    margin-bottom: 15px;
+    font-size: 55px;
+    font-weight: 300;
+}
+.key_visual_content p {
+    margin-bottom: 35px;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.5;
+}
+.key_visual_content .notice {
+    margin: 0;
+    font-size: 13px;
 }
 
 </style>
@@ -217,7 +261,7 @@ nav ul li a {
                 <h2>お電話でのご予約はこちら</h2>
                 <p>03-1234-5678</p>
             </li>
-            <a href="#">WEB予約</a>
+            <li><a href="#">WEB予約</a></li>
         </ul>
     </div>
 </header>
